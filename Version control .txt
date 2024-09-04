@@ -1,0 +1,13 @@
+# Create and switch to a new feature branch
+git checkout -b feature/reservation-system
+
+# After working on the feature, add and commit changes
+git add .
+git commit -m "Implemented reservation system"
+
+# Switch to the dev branch and merge the feature branch
+git checkout dev
+git merge feature/reservation-system
+
+# Push changes to the remote repository
+git push origin dev
